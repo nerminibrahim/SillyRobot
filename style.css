@@ -1,0 +1,45 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+
+html {
+  box-sizing: border-box;
+}
+body{
+   margin: 0px; /*default is 10 px  */
+  background: #45badd;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('./robot.gif');
+  background-size: contain;
+  /* the image will be fully visible */
+  background-position: left center;
+  /* left: horizontally and center vertically */
+  background-repeat: no-repeat;
+}
+button{
+  cursor: pointer;
+  outline: none;
+  /* when we click a button, it turns into blue, we want to elemenate that and have our own style */
+  width: 200 px;
+  height: 50 px;
+  font-family: 'Courier New', Courier, monospace;
+  /* it gives us options, we will choose 1st option coz it works for windows and mac */
+  font-size: 20px;
+  color: white;
+  background-color: #ff3482;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  /* 2px to the right:horizontal `  2px down:vertical `  20px how for out the blur of the shadow will go`   10px:spread, how far out the whole shadow will spread from the element */
+/* media Query: tablet or smaller */
+@media screen and (max-width: 1000px){
+  .container{
+    background-position: center center;
+    background-size: cover;
+  }
+}
